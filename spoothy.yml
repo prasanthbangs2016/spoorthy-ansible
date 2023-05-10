@@ -1,12 +1,12 @@
 - name: Download python Content & Extract it
   ansible.builtin.unarchive:
-    src: "https://github.com/prasanthbangs2016/spoorthy-python/archive/main.zip"
+    src: https://github.com/prasanthbangs2016/spoorthy-python/archive/main.zip
     dest: /tmp
     remote_src: yes
 
 
 - name: Copy python Content
   ansible.builtin.copy:
-    src: /tmp/python-main/
-    dest: /home/centos/python
+    src: /tmp/main/
+    dest: /home/centos/
     remote_src: yes
