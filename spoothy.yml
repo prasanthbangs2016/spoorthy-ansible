@@ -3,7 +3,7 @@
   unarchive:
     src: "https://github.com/prasanthbangs2016/spoorthy-python/archive/main.zip"
     dest: /tmp/main
-  remote_src: yes
+    remote_src: yes
 
 
 - name: Copy python Content
