@@ -1,6 +1,12 @@
 - name: Spoorthy code 
   hosts: all
   tasks:
+
+  - name: Remove Old APP Content
+    ansible.builtin.file:
+      path: /tmp/main
+      state: absent
+
   - name: Download python Content & Extract it
     ansible.builtin.unarchive:
       src: "https://github.com/prasanthbangs2016/spoorthy-python/archive/main.zip"
