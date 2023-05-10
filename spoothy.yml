@@ -1,8 +1,9 @@
 - name: Download python Content & Extract it
-  become: yes:
-  get_url:
-    url: https://github.com/prasanthbangs2016/spoorthy-python/archive/main.zip
+  become: yes
+  unarchive::
+    src: "https://github.com/prasanthbangs2016/spoorthy-python/archive/main.zip"
     dest: /tmp/main
+  remote_src: yes
 
 
 - name: Copy python Content
