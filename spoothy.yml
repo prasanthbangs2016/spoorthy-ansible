@@ -10,6 +10,6 @@
 
   - name: Copy python Content
     ansible.builtin.copy:
-      src: /tmp/main
+      src: /tmp/spoorthy-python-main
       dest: /home/centos/
       remote_src: yes
