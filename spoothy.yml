@@ -2,15 +2,15 @@
   hosts: all
   tasks:
 
-  - name: Remove Old APP Content from temp
-    ansible.builtin.file:
-      path: /tmp/spoorthy-python-main
-      state: absent
+  #- name: Remove Old APP Content from temp
+   #ansible.builtin.file:
+      #path: /tmp/spoorthy-python-main
+      #state: absent
 
-  - name: Remove Old APP Content from home directory
-    ansible.builtin.file:
-      path: /home/centos/spoorthy-python-main
-      state: absent
+  #- name: Remove Old APP Content from home directory
+    #ansible.builtin.file:
+      #path: /home/centos/spoorthy-python-main
+      #state: absent
 
   - name: Download python Content & Extract it
     ansible.builtin.unarchive:
